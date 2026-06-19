@@ -1,14 +1,14 @@
 name: Metrics
 on:
   schedule:
-    - cron: "0 0 * * *"   # runs once a day, midnight UTC
-  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches:
-      - main                # change to "master" if that's this repo's default branch
+      - main
 
 permissions:
-  contents: write            # required so the action can commit the SVG back to the repo
+  contents: write
 
 jobs:
   github-metrics:
@@ -18,17 +18,14 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # Terminal/hacker template — matches the boot-sequence aesthetic in the README
-          template: "@terminal"
-          setup_community_templates: lowlighter/metrics@master:terminal+trust
+          template: terminal
+          filename: github-metrics.svg
 
           base: header, repositories
 
-          # Isometric contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # Language breakdown across public repos
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_colors: 0:#E8B655, 1:#8B1A1A, 2:#F0E4C8
