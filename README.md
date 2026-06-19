@@ -120,8 +120,6 @@ Natural language → multi-step browser actions. Navigation, form-filling, scrap
 
 Led a **300-team, 50-college, 2,000+ footfall** national robotics event at SGGSIE&T Nanded — ₹2L prize pool, 100% sponsored, zero institutional budget, 60 student volunteers.
 
-**The 48-hour crisis:** Our accommodation partner pulled out the night before 200+ outstation teams arrived. Found two unused campus halls, negotiated mattress rentals across 5 vendors overnight — beds ready with 12 hours to spare. Teams never knew.
-
 > Leadership isn't doing everything — it's ensuring everything gets done.
 
 ---
