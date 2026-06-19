@@ -1,5 +1,5 @@
 <div align="center">
-
+ 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=F7D154&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Ujwal+Mahajan;AI+Engineer+%7C+GenAI+%26+LLM+Developer;Agentic+AI+%26+Multi-Agent+Systems;Gear+5+Mode%3A+Always+ON" alt="Typing SVG" />
 
 <img src="https://media.giphy.com/media/3o7TKz9bX9v6dkSWuk/giphy.gif" width="300" alt="Luffy Gear 5"/>
