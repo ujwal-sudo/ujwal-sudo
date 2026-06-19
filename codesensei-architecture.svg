@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #000000; }
+      .title { font-family: 'Courier New', Consolas, monospace; font-size: 22px; font-weight: bold; fill: #E8B655; }
+      .subtitle { font-family: 'Courier New', Consolas, monospace; font-size: 13px; fill: #8B1A1A; }
+      .agent-box { fill: #0A0A0A; stroke: #E8B655; stroke-width: 1.5; rx: 6; }
+      .agent-label { font-family: 'Courier New', Consolas, monospace; font-size: 14px; font-weight: bold; fill: #E8B655; text-anchor: middle; }
+      .agent-sub { font-family: 'Courier New', Consolas, monospace; font-size: 10px; fill: #C9A227; text-anchor: middle; }
+      .synth-box { fill: #0A0A0A; stroke: #8B1A1A; stroke-width: 2; rx: 8; }
+      .synth-label { font-family: 'Courier New', Consolas, monospace; font-size: 16px; font-weight: bold; fill: #F0E4C8; text-anchor: middle; }
+      .synth-sub { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #E8B655; text-anchor: middle; }
+      .out-box { fill: #0A0A0A; stroke: #E8B655; stroke-width: 2; rx: 8; }
+      .out-label { font-family: 'Courier New', Consolas, monospace; font-size: 15px; font-weight: bold; fill: #E8B655; text-anchor: middle; }
+      .out-sub { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #8B1A1A; text-anchor: middle; }
+      .stat { font-family: 'Courier New', Consolas, monospace; font-size: 12px; fill: #6b6b6b; text-anchor: middle; }
+
+      .flow-line {
+        stroke: #E8B655;
+        stroke-width: 1.5;
+        fill: none;
+        stroke-dasharray: 6 6;
+        animation: dash 1.6s linear infinite;
+        opacity: 0.7;
+      }
+      .flow-line-2 {
+        stroke: #8B1A1A;
+        stroke-width: 2;
+        fill: none;
+        stroke-dasharray: 8 6;
+        animation: dash 1.4s linear infinite;
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -24; }
+      }
+
+      .pulse-1 { animation: pulse 3s ease-in-out infinite; }
+      .pulse-2 { animation: pulse 3s ease-in-out infinite 0.3s; }
+      .pulse-3 { animation: pulse 3s ease-in-out infinite 0.6s; }
+      .pulse-4 { animation: pulse 3s ease-in-out infinite 0.9s; }
+      .pulse-5 { animation: pulse 3s ease-in-out infinite 1.2s; }
+      @keyframes pulse {
+        0%, 100% { stroke-opacity: 1; }
+        50% { stroke-opacity: 0.35; }
+      }
+
+      .synth-pulse { animation: synthpulse 2s ease-in-out infinite; }
+      @keyframes synthpulse {
+        0%, 100% { stroke-opacity: 1; }
+        50% { stroke-opacity: 0.5; }
+      }
+
+      .blink { animation: blink 1.2s steps(1) infinite; }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1000" height="600"/>
+
+  <!-- Title -->
+  <text x="500" y="38" text-anchor="middle" class="title">CodeSensei — Multi-Agent Architecture<tspan class="blink">_</tspan></text>
+  <text x="500" y="58" text-anchor="middle" class="subtitle">5 specialized agents · strict JSON contracts · synthesizer-based merge</text>
+
+  <!-- Agent nodes -->
+  <!-- Structure -->
+  <rect class="agent-box pulse-1" x="40" y="100" width="160" height="74"/>
+  <text x="120" y="130" class="agent-label">STRUCTURE</text>
+  <text x="120" y="148" class="agent-sub">AST · file graph</text>
+  <text x="120" y="162" class="agent-sub">dependency map</text>
+
+  <!-- Behavior -->
+  <rect class="agent-box pulse-2" x="220" y="100" width="160" height="74"/>
+  <text x="300" y="130" class="agent-label">BEHAVIOR</text>
+  <text x="300" y="148" class="agent-sub">runtime patterns</text>
+  <text x="300" y="162" class="agent-sub">execution paths</text>
+
+  <!-- Risk -->
+  <rect class="agent-box pulse-3" x="420" y="100" width="160" height="74"/>
+  <text x="500" y="130" class="agent-label">RISK</text>
+  <text x="500" y="148" class="agent-sub">hotspot detection</text>
+  <text x="500" y="162" class="agent-sub">complexity scoring</text>
+
+  <!-- Execution -->
+  <rect class="agent-box pulse-4" x="620" y="100" width="160" height="74"/>
+  <text x="700" y="130" class="agent-label">EXECUTION</text>
+  <text x="700" y="148" class="agent-sub">path validation</text>
+  <text x="700" y="162" class="agent-sub">trace simulation</text>
+
+  <!-- Impact -->
+  <rect class="agent-box pulse-5" x="800" y="100" width="160" height="74"/>
+  <text x="880" y="130" class="agent-label">IMPACT</text>
+  <text x="880" y="148" class="agent-sub">blast radius</text>
+  <text x="880" y="162" class="agent-sub">change propagation</text>
+
+  <!-- Converging lines to synthesizer -->
+  <path class="flow-line" d="M120,174 Q120,230 460,290"/>
+  <path class="flow-line" d="M300,174 Q300,230 480,290"/>
+  <path class="flow-line" d="M500,174 L500,290"/>
+  <path class="flow-line" d="M700,174 Q700,230 520,290"/>
+  <path class="flow-line" d="M880,174 Q880,230 540,290"/>
+
+  <!-- Synthesizer -->
+  <rect class="synth-box synth-pulse" x="350" y="290" width="300" height="86"/>
+  <text x="500" y="328" class="synth-label">SYNTHESIZER</text>
+  <text x="500" y="348" class="synth-sub">conflict resolution · JSON contract merge</text>
+  <text x="500" y="364" class="synth-sub">5 outputs → 1 coherent analysis</text>
+
+  <!-- Line to output -->
+  <path class="flow-line-2" d="M500,376 L500,440"/>
+
+  <!-- Output -->
+  <rect class="out-box" x="320" y="440" width="360" height="86"/>
+  <text x="500" y="478" class="out-label">UNIFIED ANALYSIS</text>
+  <text x="500" y="498" class="out-sub">interactive knowledge graph · D3.js</text>
+  <text x="500" y="514" class="out-sub">cinematic execution tracer</text>
+
+  <!-- Stats -->
+  <text x="500" y="565" class="stat">5–10k LOC · 50–100 files  ·  full pipeline 30–90s  ·  semantic query &lt;10s</text>
+</svg>
