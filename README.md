@@ -114,39 +114,21 @@ Natural language → multi-step browser actions. Navigation, form-filling, scrap
 
 [🔗 Repo](https://github.com/ujwal-sudo/TalkToWeb)
 
+---
+
+### 🧬 How CodeSensei Thinks
+
+<p align="center">
+<img src="./codesensei-architecture.svg" alt="CodeSensei multi-agent architecture diagram" width="100%"/>
+</p>
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=8B1A1A&height=3&section=header" width="100%"/>
 
 ### ⚓ Leadership — Marathwada's First Robowars
 
 Led a **300-team, 50-college, 2,000+ footfall** national robotics event at SGGSIE&T Nanded — ₹2L prize pool, 100% sponsored, zero institutional budget, 60 student volunteers.
 
-**The 48-hour crisis:** Our accommodation partner pulled out the night before 200+ outstation teams arrived. Found two unused campus halls, negotiated mattress rentals across 5 vendors overnight — beds ready with 12 hours to spare. Teams never knew.
-
 > Leadership isn't doing everything — it's ensuring everything gets done.
-
----
-
-### 👻 Devour the Grid
-
-<p align="center">
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ujwal-sudo/ujwal-sudo/output/pacman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ujwal-sudo/ujwal-sudo/output/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ujwal-sudo/ujwal-sudo/output/pacman-contribution-graph.svg" width="100%">
-</picture>
-</p>
-
-<sub>↳ commit graph, gamified — updates daily via GitHub Actions</sub>
-
----
-
-### 📊 Live Metrics
-
-<p align="center">
-<img src="./github-metrics.svg" alt="Metrics" width="100%"/>
-</p>
-
-<sub>↳ generated automatically via GitHub Actions — see setup below</sub>
 
 ---
 
